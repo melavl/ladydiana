@@ -1,0 +1,1832 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+background-color: #2A3C54;
+font-family: "Champagne & Limousines";
+text-rendering: optimizeLegibility;
+font-weight: 100;
+}
+
+h4{
+color: #F5F5F5;
+font-family: "voga";
+font-size: 120px;
+/* z-index: 1300; */
+text-align: left;
+text-decoration: none;
+font-weight: 200;
+}
+
+@font-face {
+   font-family: 'voga'; /* Gewünschter Name */
+   src: url("typo/CDType - Voga Medium.ttf")
+             format('truetype');
+}
+
+@font-face {
+   font-family: 'Champagne & Limousines'; /* Gewünschter Name */
+   src: url("typo/Champagne & Limousines.ttf")
+             format('truetype');
+}
+
+.test{
+  width: 3%;
+  position: relative;
+  bottom: 50px;
+  left: 50px;
+}
+
+
+/* .zwei{
+position: static;
+z-index: -100;
+top: 10px;
+left: 10px;
+width: 80%;
+} */
+
+
+/* _____NAVIGATION_____ */
+
+.nav{
+  align-self: center;
+  /* position: relative; */
+}
+
+/* _____NAVIGATIONSPUNKTE_____ */
+
+.punkte{
+  position: absolute;
+  bottom: 1vw;
+  z-index: 9000;
+}
+
+.dots {
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+.dots__item {
+                        border-radius: 9999px;
+                        height: 20px;
+                        width: 20px;
+
+                        /* Inactive dot */
+                        background-color: transparent;
+                        border: 3px solid rgba(245, 245, 245, 1);
+
+                        /* Spacing between dots */
+                        margin: 0 20px;
+                    }
+
+.active {
+                        /* Rounded border */
+                        border-radius: 9999px;
+                        height: 20px;
+                        width: 20px;
+
+                        /* Active dot */
+                        background-color: rgba(245, 245, 245, 1);
+                        border: 3px solid rgba(245, 245, 245, 1);
+
+                        /* Spacing between dots */
+                        margin: 0 20px;
+                    }
+.show{
+  visibility: visible;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.bilder{
+  position: absolute;
+}
+
+.pics {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+.mini {
+position: absolute;
+bottom: 20px;
+}
+
+.st{
+left: 20px;
+}
+
+.ki{
+left: 86px;
+}
+
+.ho{
+left: 135px;
+}
+
+.kin{
+left: 200px;
+}
+
+.hi{
+left: 283px;
+}
+
+.he{
+left: 350px;
+}
+
+.tr{
+left: 413px;
+}
+
+.in{
+left: 480px;
+}
+
+.sc{
+left: 550px;
+}
+
+.ve{
+left: 607px;
+}
+
+.bu{
+left: 680px;
+}
+
+.la{
+left: 745px;
+}
+
+.minidi{
+width: auto;
+height: 100px;
+ transition: transform .2s;
+}
+
+.minidi_kind{
+width: auto;
+height: 80px;
+ transition: transform .2s;
+}
+
+.minidi:hover {
+  transform: scale(1.5);
+}
+
+.minidi_kind:hover {
+  transform: scale(1.5);
+}
+
+span{
+  opacity: 0;
+}
+
+a{
+  font-size: 20px;
+}
+
+/* _____HORIZONTAL SCROLL_____ */
+
+main {
+  overflow-x: hidden;
+  display: flex;
+}
+
+section {
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+
+.children p {
+  font-size: 12pt;
+  width: 28%;
+  color: #F5F5F5;
+  line-height: 18pt;
+letter-spacing: 1px;
+font-weight: 100;
+}
+
+/* _____STARTSEITE_____ */
+
+h2{
+color: #F5F5F5;
+text-align: right;
+align-self: flex-end;
+margin-right: 300px;
+font-weight: 100;
+font-size: 34px;
+letter-spacing: 0.1rem;
+line-height: 3rem;
+}
+
+h2:hover{
+text-decoration: line-through;
+}
+
+.fat{
+  font-weight: 900;
+opacity: 1;
+}
+
+.null{
+  width: 6%;
+  align-self: flex-end;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  transition: transform .2s;
+}
+
+.null:hover {
+  transform: scale(1.5);
+}
+
+.eins{
+  width: 70%;
+}
+
+.c1 {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+.overlay1 {
+  height: 80%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 50px;
+  background-color: rgba(109, 74, 113, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+display: flex;
+align-content: center;
+align-items: center;
+justify-content: flex-end;
+border-radius: 50px 0 0 50px;
+}
+
+.overlay1 p{
+  font-size: 24px;
+  width: 40%;
+  line-height: 20pt;
+  color: #FF9B9D;
+  letter-spacing: 0.1rem;
+}
+
+.ol1{
+  font-size: 28px;
+  font-family: "Champagne & Limousines";
+  color: #FDC605;
+  opacity: 1;
+  font-weight: 100;
+margin-left: -3em;
+}
+
+.null1{
+  width:50%;
+  margin-right: -15em;
+  margin-left: 10em;
+}
+
+/* _____KINDHEIT_____ */
+
+.c2 {
+  background-image: url(images/Kindheit2-01.png);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+align-content: space-between;
+justify-content: center;
+}
+
+.h3-c2{
+color: #DFD6D5;
+font-family: "voga";
+font-size: 300px;
+/* z-index: 100; */
+text-align: right;
+text-decoration: none;
+font-weight: 200;
+align-self: flex-end;
+position: static;
+line-height: 0.8em;
+margin-right: 50px;
+}
+
+.c3 {
+  background-image: url(images/lalelu.png);
+background-position: center;
+background-size: cover;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.h4c3{
+  color: #DFD6D5;
+  font-family: "voga";
+  font-size: 200px;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 200;
+  align-self: flex-start;
+  margin-left: 50px;
+}
+
+.c3a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: space-between;
+  justify-content: space-between;
+  z-index: 100;
+  margin-left: 2rem;;
+}
+
+.testt{
+  height: 100%;
+  overflow: auto;
+}
+
+.p2c3a{
+  margin-right: 2rem;
+}
+
+/* _____HOCHZEIT_____ */
+
+.c4 {
+  background-image: url(images/Cathedral.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: 22%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+  z-index: 100;
+}
+.pc4 {
+  columns: 2 3em;
+  margin-left: 64em;
+  color: #F5F5F5;
+  line-height: 18pt;
+letter-spacing: 1px;
+font-weight: 100;
+margin-right: 2rem;
+}
+
+.rotieren{
+  transform: rotate(270deg);
+  font-size: 180px;
+  color: #DFD6D5;
+    opacity: 1;
+    margin-top: 1.6em;
+    margin-left: -1.5em;
+}
+
+.h4c4{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #DFD6D5;
+  align-self: flex-start;
+  font-size: 180px;
+  margin-left: -1.5em;
+}
+
+/* _____KINDER_____ */
+
+.c5 {
+background-image: url(images/Diana-William-und-Harry-Grosses-Bild.png), linear-gradient(to right, rgb(42, 60, 84), rgb(90, 114, 137));
+background-size: contain;
+background-repeat: no-repeat;
+background-position: 15%;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+align-content: space-between;
+align-items: space-between;
+justify-content: space-between;
+}
+
+.c6 {
+background-image: url(images/Badezimmer.png);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: column;
+align-content: flex-start;
+align-items: flex-start;
+justify-content: flex-start;
+position: relative;
+}
+
+.overlaykinder{
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  width: 61%;
+  height: 100%;
+  padding-top: 3em;
+  padding-left: 3em;
+  /* margin-left: -1.9em; */
+  /* margin-top: -2em; */
+  visibility: hidden;
+}
+
+.overlaykinder.fade {
+  visibility: visible;
+  animation: anim6 4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim6 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(-60rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pc6a{
+color: #2A3C54;
+width: 50%;
+line-height: 19pt;
+letter-spacing: 1px;
+}
+
+.strongc5{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  letter-spacing: -8px;
+  font-size: 90px;
+  font-family: "Champagne & Limousines";
+  color: #DFD6D5;
+  opacity: 1;
+  font-weight: 200;
+margin-left: 5em;
+}
+
+.end{
+  font-family: "Voga";
+  align-self: flex-end;
+  font-size: 300px;
+  color: #DFD6D5;
+  line-height: 75px;
+  font-weight: 600;
+  margin-top: 10%;
+  margin-right: 0.25em;
+}
+
+.fett{
+font-size: 45pt;
+text-align: center;
+color: #EC4C88;
+}
+
+.zwei{
+  width: 6%;
+  position: relative;
+left: 90rem;
+  top: 45rem;
+  transition: transform .2s;
+}
+
+.zwei:hover {
+  transform: scale(1.5);
+}
+
+.overlay3 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 102000;
+  right: 0;
+  top: 0px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -50%;
+ overflow-x: hidden;
+transition: 0.5s;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: center;
+align-items: flex-end;
+justify-content: flex-end;
+}
+
+.spanol3{
+  font-family: "Voga";
+  font-weight: 200;
+  color: #2A3C54;
+  font-size: 40px;
+  opacity: 1;
+}
+
+.pc6ol{
+color: #2A3C54;
+width: 20%;
+line-height: 19pt;
+letter-spacing: 1px;
+margin-right: 1.5em;
+}
+
+.r{
+  text-align: right;
+}
+
+.mb{
+  margin-bottom: -11em;
+  margin-left: -17em;
+  width: 40%
+}
+
+/* _____HIV_____ */
+
+.c7 {
+  background-image: url(images/Schleife_1.png), linear-gradient(to right, rgb(90, 114, 137), rgb(42, 60, 84));
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.c7a {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+
+.h3-c7{
+  color: #F5F5F5;
+  font-family: "voga";
+  font-size: 240px;
+  text-align: right;
+  text-decoration: none;
+  font-weight: 200;
+  align-self: flex-end;
+  position: static;
+  margin-right: 50px;
+}
+
+.headinghiv{
+  position: relative;
+}
+
+.pink{
+color:#EC4C88;
+}
+
+.datumhiv{
+  position: absolute;
+}
+
+.pc7a{
+margin-left: 2rem;
+}
+
+.h5c7{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.4px;
+  font-family: "Champagne & Limousines";
+  font-size: 55px;
+  color: #F5F5F5;
+  letter-spacing: 2px;
+  font-weight: 200;
+margin-left: 3em;
+margin-top: -9.3em;
+}
+
+strong{
+  color: #2A3C54;
+  font-family: "voga";
+  font-size: 16pt;
+}
+
+.buttonhiv{
+  border-radius: 20px;
+  height: 50px;
+  width: 80px;
+ align-self: flex-end;
+  background-color: rgba(245, 245, 245, 0.3);
+  position: relative;
+right: 50px;
+bottom: 4rem;
+}
+
+.buttonhiv:hover {
+  background-image: url(images/nat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 90%;
+}
+
+.overlay2 {
+  background-image: url(images/Diana_aufklärung-01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 10%;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  top: 0px;
+  background-color: #EC4C88;
+  overflow-x: hidden;
+  transition: 0.5s;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: flex-end;
+align-items: flex-end;
+justify-content: center;
+}
+
+.overlay2 p{
+  width: 20%;
+  line-height: 20pt;
+  color: #F5F5F5;
+  margin-right: 50px;
+  letter-spacing: 1px;
+}
+
+.h4c7b{
+margin-right: 80px;
+}
+
+.ola{
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+/* _____HER TRUE STORY_____ */
+
+.c8 {
+  background-image: url(images/Diana_Sitting.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.c8a{
+    margin-left: 6em;
+}
+
+.pc8{
+  columns: 2 3em;
+  margin-right: 45em;
+  margin-left: 10rem;
+  color: #DFD6D5;
+  line-height: 18pt;
+letter-spacing: 1px;
+font-weight: 100;
+}
+
+.h4c8{
+  margin-top: 3rem;
+  margin-left: 6rem;
+  color: #DFD6D5;
+  line-height: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+.headinghts{
+  position: relative;
+}
+
+.datumhts{
+  position: absolute;
+}
+
+.h5c8{
+  font-family: "Champagne & Limousines";
+  font-size: 30px;
+  color: #F5F5F5;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin-left: 1.7em;
+  margin-top: -7.9em;
+}
+
+.vl1{
+  border-left: 3px solid #EC4C88;
+  height: 300%;
+  position: absolute;
+  margin-top: -17em;
+  margin-left: -0.6em;
+}
+
+.vl2{
+  border-left: 3px solid #EC4C88;
+  height: 400%;
+  position: absolute;
+  margin-top: -17em;
+  margin-left: -1.8em;
+}
+
+.h4c8a{
+  margin-left: 1em;
+  opacity: 1;
+}
+
+.drei{
+    width: 6%;
+    margin-left: 97em;
+    margin-top: 1em;
+    transition: transform .2s;
+    box-shadow: 5px 5px 15px #222222;
+	border-radius: 50px;
+  }
+
+  .drei:hover {
+    transform: scale(1.5);
+  }
+
+.overlay4{
+    height: 80%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50px;
+    background-color: rgba(245, 245, 245, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px 0 0 50px;
+}
+
+.drei1{
+  width:50%;
+  margin-right: -15em;
+  margin-left: 10em;
+}
+
+.h5ol4{
+font-family: "Voga";
+font-size: 80px;
+transform: rotate(270deg);
+line-height: 1.3em;
+color: #2A3C54;
+  margin-left: -1em;
+  font-weight: 200;
+}
+
+.pol4{
+  font-size: 20px;
+  width: 20%;
+  line-height: 20pt;
+  letter-spacing: 1px;
+  color: #EC4C88;
+  margin-left: -19em;
+}
+
+/* _____TRENNUNG_____ */
+
+.c9 {
+  background: linear-gradient(to right, rgb(42, 60, 84), rgb(17, 25, 34));
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.h5c9{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  font-family: "Champagne & Limousines";
+  font-size: 130px;
+  color: #F5F5F5;
+  letter-spacing: 2px;
+  font-weight: 200;
+opacity: 1;
+position: absolute;
+}
+
+.h4c9{
+color: #DFD6D5;
+font-size: 270px;
+z-index: 4000;
+line-height: 0.8em;
+margin-left: 2rem;
+margin-bottom: 2rem;
+}
+
+.pc9{
+  color: #F5F5F5;
+  columns: 2 3em;
+  line-height: 18pt;
+  letter-spacing: 1px;
+  font-weight: 100;
+  position: absolute;
+  margin-left: 35em;
+  margin-right: 35em;
+  margin-bottom: 30em;
+}
+
+.pc9.erscheinen {
+  animation: anim5 .7s ease-out;
+  animation-fill-mode: forwards
+}
+
+@keyframes anim5 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.trennungc{
+position: relative;
+}
+
+.trennungd{
+position: absolute;
+}
+
+.Diana1{
+  width: 24%;
+  margin-left: -4em;
+  margin-bottom: 7em;
+ margin-top: 4em;
+}
+
+.Charles1{
+  width:24%;
+  margin-left: -10em;
+  margin-bottom: -54em;
+
+}
+
+.Diana1.trennen {
+  animation: anim3 .7s ease-out;
+  animation-fill-mode: forwards;
+}
+.Charles1.trennen {
+  animation: anim4 .7s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim3 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(27rem);
+  }
+}
+
+@keyframes anim4 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-20rem);
+  }
+}
+
+.vier{
+    width: 6%;
+    transition: transform .2s;
+    margin-left: -5rem;
+    margin-bottom: 45rem;
+  }
+
+  .vier:hover {
+    transform: scale(1.5);
+  }
+
+  .overlay5{
+      height: 80%;
+      width: 0;
+      position: absolute;
+      z-index: 10000;
+      right: 0;
+      top: 50px;
+      background-color: rgba(90, 114, 137, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+    display: flex;
+      flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 50px 0 0 50px;
+  }
+
+.pol5a{
+text-align: left;
+width: 30%;
+color: #F5F5F5;
+font-size: 17px;
+line-height: 20pt;
+letter-spacing: 1px;
+margin-left: 3rem;
+margin-top: 2rem;
+}
+
+.pol5b{
+text-align: right;
+width: 30%;
+color: #F5F5F5;
+font-size: 17px;
+line-height: 20pt;
+letter-spacing: 1px;
+margin-left: 16rem;
+}
+
+/* _____INTERVIEW_____ */
+
+.c10 {
+  background: linear-gradient(to right, rgb(17, 25, 34), rgb(42, 60, 84));
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.h4c10{
+color: #DFD6D5;
+line-height: 1em;
+  transition: 0.2s;
+  margin-top: 0.7em;
+}
+
+.h4c10a{
+margin-left: 0.8em;
+opacity: 1;
+}
+
+.h4c10b{
+margin-left: -0.5em;
+opacity: 1;
+}
+
+.h4c10:hover{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  margin-left: -1.3em;
+  margin-top: -0.5rem;
+}
+
+.headingc10{
+  position: relative;
+}
+
+.pc10{
+  position: absolute;
+  font-size: 30px;
+  color: #F5F5F5;
+  margin-left: 6em;
+}
+
+.c10a {
+  background-image: url(images/INterview_Zeichenfläche_3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+display: grid;
+   grid-template-columns: 4fr repeat(14, 1fr) 15fr;
+    grid-template-rows: repeat(13, 1fr) 15fr;
+    grid-template-areas:
+".  .  .  .  .  .  .  .  .  f  f  f  f  f  f  f"
+".  .  .  .  .  .  b  b  .  f  f  f  f  f  f  f"
+".  .  .  .  .  .  b  b  .  e  e  e  e  e  .  ."
+".  .  a  a  a  .  b  b  .  e  e  e  e  e  .  ."
+".  .  a  a  a  .  .  .  .  .  .  .  .  .  .  ."
+".  .  a  a  a  .  d  d  d  .  .  .  .  .  .  ."
+".  .  .  .  .  .  d  d  d  .  .  .  .  .  .  ."
+".  .  .  c  c  .  d  d  d  .  .  .  .  .  .  ."
+".  .  .  c  c  .  .  .  .  .  .  .  .  .  .  ."
+".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .";
+}
+
+.rahmen1 {
+grid-area: a;
+/* font-size: 50px; */
+display: flex;
+justify-content: center;
+align-items: center;
+  background-color: #89803D;
+  height:100%;
+  border-color: #EAE7CA;
+  border-width: 5px;
+  border-style: solid;
+  font-family: "voga";
+font-size: 100px;
+color: #EAE7CA;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 0.5px;
+font-weight: 200;
+}
+
+.rahmen2{
+  grid-area: b;
+  background-color: #FF9B9D;
+  height: 100%;
+  border-color: #EAE7CA;
+border-width: 5px;
+border-style: solid;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "voga";
+font-size: 46px;
+color: #EAE7CA;
+font-weight: 200;
+writing-mode: vertical-rl;
+text-orientation: upright;
+}
+
+.rahmen3{
+  grid-area: c;
+  background-color: #E8A51F;
+  height: 100%;
+  border-color: #EAE7CA;
+border-width: 5px;
+border-style: solid;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "voga";
+font-size: 36px;
+color: #EAE7CA;
+font-weight: 200;
+}
+
+.rahmen4{
+  grid-area: d;
+  background-color: #54777F;
+  height: 100%;
+  border-color: #EAE7CA;
+border-width: 5px;
+border-style: solid;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: "voga";
+font-size: 40px;
+color: #EAE7CA;
+font-weight: 200;
+text-align: center;
+}
+
+.rahmen5{
+  grid-area: e;
+  background-color: #F9C947;
+  height: 100%;
+  border-color: #EAE7CA;
+border-width: 5px;
+border-style: solid;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "voga";
+font-size: 90px;
+color: #EAE7CA;
+font-weight: 200;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: 0.5px;
+}
+
+.pc10a{
+  grid-area: f;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-family: "voga";
+  font-size: 46px;
+  color: #F5F5F5;
+  font-weight: 200;
+  line-height: 4rem;
+}
+
+.c10b {
+background: linear-gradient(to right, rgb(17, 25, 34), rgb(42, 60, 84));
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.imgc10b{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(138, 138, 138, 0.9);
+  background-size: contain;
+  background-repeat: no-repeat;
+ overflow-x: hidden;
+ border-radius: 200px;
+transition: 0.5s;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-content: space-evenly;
+align-items: center;
+justify-content: center;
+}
+
+.overlay6.opacityin {
+  animation: anim7 4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim7 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.c10c {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(images/INterviewdf-03.png);
+  border-radius: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.h5c10ba{
+font-family: "Voga";
+/* transform: rotate(270deg); */
+font-size: 60px;
+color: #C12F66;
+font-weight: 200;
+/* margin-left: -10rem; */
+}
+
+.pc10ba{
+color: #F5F5F5;
+width: 20%;
+line-height: 18pt;
+letter-spacing: 1px;
+}
+
+.qc10ba{
+  font-size: 11pt;
+  color: #C12F66;
+  width: 20%;
+  line-height: 16pt;
+  text-align: right;
+  font-weight: bold;
+}
+
+.h5c10bb{
+  font-family: "Voga";
+  /* transform: rotate(270deg); */
+  font-size: 60px;
+  color: #FDC605;
+  font-weight: 200;
+  /* margin-left: -10rem; */
+}
+
+.qc10bb{
+  font-size: 11pt;
+  color: #FDC605;
+  width: 20%;
+  line-height: 16pt;
+  font-weight: bold;
+  text-align: right;
+}
+
+.h5c10bc{
+  font-family: "Voga";
+  /* transform: rotate(270deg); */
+  font-size: 60px;
+  color: #334D65;
+  font-weight: 200;
+    /* margin-left: -10rem; */
+}
+
+.qc10bc{
+  font-size: 11pt;
+  color: #334D65;
+  width: 20%;
+  line-height: 16pt;
+  text-align: right;
+  font-weight: bold;
+}
+
+.h5c10bd{
+  font-family: "Voga";
+  /* transform: rotate(90deg); */
+  font-size: 60px;
+  color: #C12F66;
+  font-weight: 200;
+  /* margin-left: -10rem; */
+}
+
+.h5c10be{
+  font-family: "Voga";
+  /* transform: rotate(90deg); */
+  font-size: 60px;
+  color: #334D65;
+  font-weight: 200;
+  /* margin-left: -10rem; */
+}
+
+.h5c10bf{
+  font-family: "Voga";
+  /* transform: rotate(90deg); */
+  font-size: 60px;
+  color: #FDC605;
+  font-weight: 200;
+  /* margin-left: -10rem; */
+}
+
+
+
+/* _____SCHEIDUNG_____ */
+
+.c11 {
+  background-image: url(images/Scheidung_Hände.png), linear-gradient(to right, rgb(42, 60, 84), rgb(90, 114, 137));;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.h4c11{
+text-align: right;
+margin-left: 1em;
+font-size: 160px;
+}
+
+.spanc11
+{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+  opacity: 1;
+}
+
+.pc11{
+  color: #F5F5F5;
+  width: 25%;
+  line-height: 20pt;
+  letter-spacing: 1px;
+
+}
+
+/* _____VERSTEIGERUNG_____ */
+
+.c12 {
+  background-color: #5A7289;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: space-around;
+}
+
+.h4c12{
+  font-size: 180px;
+  letter-spacing: 0.06em;
+  margin-left: 2rem;
+}
+
+.rotieren2{
+  transform: rotate(90deg);
+  font-size: 90px;
+margin-left: 66rem;
+letter-spacing: 1px;
+
+}
+
+.kleiderständer{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+    margin-block-end: 0em;
+
+}
+
+.dresss{
+  position: absolute;
+}
+
+.dresses{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+    margin-block-end: 0em;
+
+}
+
+.kleiderständer_leer{
+  display: inline;
+}
+
+.dress{
+  display: inline;
+}
+
+.pc12{
+color: #F5F5F5;
+columns: 3 3em;
+margin-right: 36em;
+line-height: 18pt;
+letter-spacing: 1px;
+font-weight: 100;
+margin-left: 2rem;
+}
+
+.Kleider {
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+     position: relative;
+}
+
+.kleid1 {
+  width:120%;
+  margin: 9em -4em;
+}
+
+.kleid2 {
+  width:120%;
+  margin: 9em -4em;
+}
+
+.kleid2:hover{
+  opacity: 0.6;
+}
+
+.dresses.binda {
+  animation: anim1 1s ease-out;
+}
+
+@keyframes anim1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-50rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* _____BULIMIE_____ */
+
+.c13 {
+  background: linear-gradient(to right, rgb(90, 114, 137), rgb(42, 60, 84));
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.pc13{
+  font-family: "Voga";
+  font-size: 700px;
+  color: #EC4C88;
+}
+
+/* .h4c13{
+  font-size: 100px;
+} */
+
+.c13a {
+  background-image: url(images/engagment-04.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.parent{
+  margin-left: 25rem;
+}
+
+.h4-c13b{
+  color: #fe3888;
+  font-family: "voga";
+  font-size: 75px;
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+.h4-c13a {
+color: #F5F5F5;
+font-family: "voga";
+font-size: 100px;
+/*z-index: 100;*/
+align-self: flex-start;
+text-decoration: none;
+margin-left: 50px;
+}
+
+
+.c13a p{
+  width: 75%;
+  line-height: 15pt;
+  color: #F5F5F5;
+  margin-left: 9em;
+  margin-top: 2.5em;
+  columns: 2;
+  column-gap: 8em;
+  line-height: 18pt;
+  letter-spacing: 1px;
+}
+
+.c13d{
+display: flex;
+flex-direction: row;
+align-content: flex-end;
+justify-content: flex-end;
+align-items: flex-start;
+min-width: 50vw;
+max-width: 50vw;
+margin-left: -5rem;
+}
+
+.c13d p{
+  width: 50%;
+  line-height: 15pt;
+  color: #F5F5F5;
+  line-height: 18pt;
+  letter-spacing: 1px;
+}
+
+.pc13d1{
+  margin-top: 25rem;
+    margin-left: -2rem;
+}
+
+.pc13d2{
+  margin-top: 25rem;
+    margin-left: -5rem;
+}
+
+.rotieren3{
+  transform: rotate(270deg);
+  color: #fe3888;
+  font-family: "voga";
+  font-size: 50px;
+  text-decoration: none;
+  font-weight: 200;
+  margin-left: -6rem;
+  margin-top: 24rem;
+  position: relative;
+}
+
+.rotieren4{
+  transform: rotate(270deg);
+  color: #fe3888;
+  font-family: "voga";
+  font-size: 50px;
+  text-decoration: none;
+  font-weight: 200;
+  margin-left: -3rem;
+  margin-top: 30rem;
+    position: relative;
+}
+
+/* LANDMINENEINSATZ */
+
+.c14a {
+  background-image: url(images/Landmineneinsatz.png);
+  background-repeat: no-repeat;
+  background-position: 70% 75%;
+background-size: 28%;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-end;
+align-content: center;
+}
+
+.boxh4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.boxrest{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.h4-c14a {
+  color: #F5F5F5;
+  font-family: "voga";
+  font-size: 220px;
+  z-index: -100;
+  text-decoration: none;
+  font-weight: 200;
+  align-self: flex-start;
+  text-align: right;
+  line-height: 11rem;
+  letter-spacing: 0.5rem;
+}
+
+.c14a p {
+  width: 40%;
+  color: #F5F5F5;
+  margin-top: 2rem;
+  margin-left: 8rem;
+  line-height: 18pt;
+  letter-spacing: 1px;
+}
+
+.zwölf {
+  width: 7%;
+  position: relative;
+  margin-right: 2rem;
+}
+
+
+/* UNFALL */
+
+.c15{
+background: linear-gradient(rgb(42, 60, 84), rgb(137, 102, 116));
+display: flex;
+flex-direction: column;
+align-content: space-around;
+justify-content: space-around;
+}
+
+.c15box1{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+align-content: flex-end;
+position: relative;
+}
+
+.c15box2{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+align-content: flex-start;
+margin-right: 20rem;
+}
+
+.h2c15{
+  font-family: "voga";
+  font-size: 250pt;
+  color: #F5F5F5;
+  font-weight: 200;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+.h5c15{
+  font-family: "voga";
+  font-size: 120px;
+  color: #F5F5F5;
+  font-weight: 200;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px;
+    transform: rotate(270deg);
+position: absolute;
+margin-bottom: 16rem;
+}
+
+.pc15{
+  font-family: "Champagne & Limousines";
+  color: #F5F5F5;
+  line-height: 18pt;
+  letter-spacing: 1px;
+  width: 21%;
+  text-align: right;
+}
+
+.pc152{
+  font-family: "Champagne & Limousines";
+  color: #F5F5F5;
+  line-height: 18pt;
+  letter-spacing: 1px;
+  width: 42%;
+  margin-right: -2rem;
+}
+
+
+/* VERMÄCHTNIS */
+
+.c16{
+background: linear-gradient(rgb(137, 102, 116), rgb(247, 151, 154));
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-end;
+align-content: flex-end;
+position: relative;
+}
+
+.c16box1{
+display: flex;
+flex-direction: column;
+align-content: flex-end;
+justify-content: flex-end;
+margin-left: 3rem;
+margin-bottom: 2rem;
+}
+
+.pc16a{
+  font-family: "Champagne & Limousines";
+  color: #F5F5F5;
+  line-height: 18pt;
+  letter-spacing: 1px;
+  width: 45%;
+  margin-right: -2rem;
+}
+
+.pc16b{
+  font-family: "voga";
+  color: #F5F5F5;
+  line-height: 18pt;
+  font-size: 15pt;
+  letter-spacing: 1px;
+  width: 45%;
+  margin-right: -2rem;
+}
+
+.pc16c{
+  font-family: "Champagne & Limousines";
+  color: #F5F5F5;
+  line-height: 18pt;
+  letter-spacing: 1px;
+  width: 45%;
+  margin-right: -2rem;
+}
+
+.h2c16{
+  font-family: "voga";
+  font-size: 250pt;
+  color: #F5F5F5;
+  font-weight: 200;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px;
+  margin-bottom: 7rem;
+  margin-right: -1rem;
+}
+
+.h3c16{
+  font-family: "Champagne & Limousines";
+  color: #F5F5F5;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 60pt;
+  font-weight: 200;
+}
+
+.dreizehn{
+  width:17%;
+  position: absolute;
+  margin-top: -50rem;s
+}
+.vierzehn{
+  width: 21%;
+  position: absolute;
+margin-top: -45rem;
+margin-left: -20rem;
+}
+
+.pc16d{
+  font-family: "Champagne & Limousines";
+  color: #F5F5F5;
+  line-height: 18pt;
+  letter-spacing: 1px;
+  position: absolute;
+width:18%;
+margin-top: -26rem;
+margin-left: -20rem;
+opacity: 0;
+}
+
+.pc16e{
+  font-family: "Champagne & Limousines";
+  color: #F5F5F5;
+  line-height: 18pt;
+  letter-spacing: 1px;
+  position: absolute;
+  width:17%;
+  margin-top: -48rem;
+  margin-left: 20rem;
+  opacity: 0;
+}
