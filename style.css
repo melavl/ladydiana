@@ -1397,7 +1397,7 @@ letter-spacing: 1px;
 
 }
 
-.kleiderständer{
+.kleiderstaender{
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -1421,7 +1421,7 @@ letter-spacing: 1px;
 
 }
 
-.kleiderständer_leer{
+.kleiderstaender_leer{
   display: inline;
 }
 
